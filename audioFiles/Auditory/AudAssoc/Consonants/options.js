@@ -1,3 +1,3 @@
-const options = ["ಕ-ಗ-ಖ", "ಛ-ಕ-ಖ", "ಫ-ಗ-ಘ", "j-b-c", "k-b-c","a-b-n","a-b-f","a-b-d","a-e-c","a-w-c","a-q-c"];
+const options = ["ಕೊ-ಕೈ-ಕೌ","ಕಿ-ಕ-ಕು","ಕೈ-ಕಿ-ಕೌ","ಕೆ-ಕೈ-ಕು","ಕೆ-ಕಿ-ಕೌ"];
 
 export default options;

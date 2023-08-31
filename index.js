@@ -1,4 +1,8 @@
-import express from "express"
+import express from "express";
+import https from "https";
+import path from "path";
+import fs from "fs";
+
 import cors from 'cors'
 const app = express();
 import loginRoute from './routes/loginRoute.js'
@@ -6,7 +10,6 @@ import audioRoute from './routes/audioRoute.js'
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-
 
 app.use(cors());
 
@@ -19,4 +22,11 @@ app.get("/", (req,res)=>{
     res.json("Response from the server");
 })
 
-app.listen(3000, ()=>console.log("Server connected"));
+// const sslServer = https.createServer({
+//     key:"",
+//     cert: ""
+// }, app)
+
+
+// sslServer.listen(80, ()=>console.log("secure server connected"));
+app.listen(3000, ()=>{console.log("server connected")});
